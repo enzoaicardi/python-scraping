@@ -21,14 +21,20 @@
 
 ## SQL 1/2
 
-- [ ] Insérer les données de la question Scraping [1/2] dans base de données sqlite appelée database.db dans le dossier data/databases. La table devra s’appeler episode. Veillez à utiliser les types adéquats (la date peut toutefois être stockée en tant que chaîne de caractères avec un typeTEXT).
+- [x] Insérer les données de la question Scraping [1/2] dans base de données sqlite appelée database.db dans le dossier data/databases. La table devra s’appeler episode. Veillez à utiliser les types adéquats (la date peut toutefois être stockée en tant que chaîne de caractères avec un type TEXT).
 
 ## Algorithmie 1/2
 
-- [ ] Calculer le nombre d’épisodes diffusés par chaque chaîne de télévision (présente dans les données) en Octobre.
+- [x] Calculer le nombre d’épisodes diffusés par chaque chaîne de télévision (présente dans les données) en Octobre.
 Vous pouvez faire directement des requêtes SQL, ou rapatrier les données depuis une table (ou un fichier dans lequel vous les auriez stocker) et faire les calculs avec Python. Indiquer dans le fichier README.md le nom des trois chaînes qui ont diffusé le plus d’épisodes.
+    - Netflix : 39
+    - Disney +: 32
+    - Hulu: 24
 
-- [ ] Faire de même pour les pays (pensez à mutualiser votre code !)
+- [x] Faire de même pour les pays (pensez à mutualiser votre code !)
+    - Etats Unis : 238
+    - Canada : 43
+    - Royaume Uni: 31
 
 - [ ] Quels mots reviennent le plus souvent dans les noms des séries ? (attention à ne compter qu’une seule fois chaque série, et pas une fois chaque épisode) Les indiquer dans le fichier README.md
 
