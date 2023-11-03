@@ -1,3 +1,5 @@
+months_list = [None, 'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Aout', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
+
 def read_csv():
     with open("datas/files/episodes.csv", "r", encoding="utf-8", newline="") as csvfile:
         # Ignorer l'en-tête du fichier CSV
@@ -19,3 +21,7 @@ def read_csv():
             table.append((show, episode, season, country, channel, date, link))
 
     print(table)
+
+
+def get_month(month_id):
+    return months_list[int(month_id)]
