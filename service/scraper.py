@@ -12,9 +12,11 @@ class Scraper:
         self.db = DatabaseSingleton().get_cursor()
         self.episodes = []
 
-    def scrape_last_month(self):
-        response = requests.get(Config.BASE_URL + "/calendrier_des_series.html").content
-        page = bs4.BeautifulSoup(response, "html")
+    def scrape_month(self, month):
+        response = requests.get(
+            Config.BASE_URL + "/calendrier_des_series.html?date=2023-" + month
+        ).content
+        page = bs4.BeautifulSoup(response, "html.parser")
 
         columns = page.find_all("td", class_="td_jour")
 
@@ -64,6 +66,7 @@ class Scraper:
                         column["links"][i],
                     )
                 )
+        self.populate_episodes_table_database()
 
         return len(self.episodes)
 
@@ -116,5 +119,3 @@ class Scraper:
                 ),
             )
         self.db.connection.commit()
-
-        print("Base de données peuplée avec succès.")

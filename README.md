@@ -2,6 +2,14 @@
 
 > Regarder le fichier `Pipfile`
 
+Les réponses aux sujets sont toutes disponibles dans le notebook.
+Pour installer le venv et toutes les dépendances: 
+- `pip install pipenv`
+- `pipenv install`
+Il est au possible de selectioner l'environnement virtuel dans le notebook (penser a reload après le pipenv install)
+
+- `pipenv run python summarize_episodes.py --month 11 ` (pipenv run python permet d'executer les commandes python en utilisant le virtualenv)
+
 # Tasks
 
 ## Scraping 1/2
@@ -48,15 +56,15 @@ Vous pouvez faire directement des requêtes SQL, ou rapatrier les données depui
 
 ## SQL 2/2
 
-- [ ] Stocker les données de durée d’épisode (en minutes) dans une nouvelles table duration qui contiendra une Foreign Key pointant sur l’épisode en question dans la table episode.
+- [x] Stocker les données de durée d’épisode (en minutes) dans une nouvelles table duration qui contiendra une Foreign Key pointant sur l’épisode en question dans la table episode.
 
 ## Algorithmie 2/2
 
-- [ ] Quelle est la chaîne de TV qui diffuse des épisodes pendant le plus grand nombre de jours consécutifs sur le mois d’Octobre ? (écrire une fonction qui permet de répondre à cet question)
+- [x] Quelle est la chaîne de TV qui diffuse des épisodes pendant le plus grand nombre de jours consécutifs sur le mois d’Octobre ? (écrire une fonction qui permet de répondre à cet question)
 
 ## Orchestration
 
-- [ ] On souhaite que la commande suivante : `python3 summarize_episodes.py --month 11` affiche dans la console :
+- [x] On souhaite que la commande suivante : `python3 summarize_episodes.py --month 11` affiche dans la console :
 
 ```
     - [NOMBRE] episodes seront diffusés pendant le mois de [MOIS].
