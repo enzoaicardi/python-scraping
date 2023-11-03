@@ -36,7 +36,11 @@ Vous pouvez faire directement des requêtes SQL, ou rapatrier les données depui
     - Canada : 43
     - Royaume Uni: 31
 
-- [ ] Quels mots reviennent le plus souvent dans les noms des séries ? (attention à ne compter qu’une seule fois chaque série, et pas une fois chaque épisode) Les indiquer dans le fichier README.md
+- [x] Quels mots reviennent le plus souvent dans les noms des séries ? (attention à ne compter qu’une seule fois chaque série, et pas une fois chaque épisode) Les indiquer dans le fichier README.md
+    - the : 21 
+    - all : 4 
+    - of : 3 
+    - and : 3
 
 ## Scraping 2/2
 
