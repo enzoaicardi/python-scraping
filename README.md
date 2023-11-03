@@ -6,18 +6,18 @@
 
 ## Scraping 1/2
 
-- [ ] Récupérer les données relatives à la diffusion d’épisodes pour le mois en cours disponibles sur cette page :  https://www.spin-off.fr/calendrier_des_series.html
+- [x] Récupérer les données relatives à la diffusion d’épisodes pour le mois en cours disponibles sur cette page :  https://www.spin-off.fr/calendrier_des_series.html
 
-    - [ ] Le nom de la série
-    - [ ] Le numéro de l’épisode
-    - [ ] Le numéro de la saison
-    - [ ] La date de diffusion de l’épisode
-    - [ ] Le pays d’origine
-    - [ ] La chaîne qui diffuse la série
-    - [ ] L’url relative de la page de l’épisode sur le site spin-off
+    - [x] Le nom de la série
+    - [x] Le numéro de l’épisode
+    - [x] Le numéro de la saison
+    - [x] La date de diffusion de l’épisode
+    - [x] Le pays d’origine
+    - [x] La chaîne qui diffuse la série
+    - [x] L’url relative de la page de l’épisode sur le site spin-off
 
-- [ ] Enregistrez ces données dans un fichier episodes.csv dans le dossier data/files (vous pouvez utiliser une librairie)
-- [ ] Écrire une fonction ou une classe qui permet de lire le fichier episodes.csv sans utiliser de librairie. Cette fonction ou classe devra renvoyer une liste de tuples avec les bons types
+- [x] Enregistrez ces données dans un fichier episodes.csv dans le dossier data/files (vous pouvez utiliser une librairie)
+- [x] Écrire une fonction ou une classe qui permet de lire le fichier episodes.csv sans utiliser de librairie. Cette fonction ou classe devra renvoyer une liste de tuples avec les bons types
 
 ## SQL 1/2
 
